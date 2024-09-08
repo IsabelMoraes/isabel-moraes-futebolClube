@@ -5,7 +5,7 @@ import AddNewMatchBtn from '../components/AddNewMatchBtn';
 import LeaderboardBtn from '../components/LeaderboardBtn';
 import LoginBtn from '../components/LoginBtn';
 import GamerFilter from '../components/GameFilter';
-import '../styles/pages/games.css';
+// import '../styles/pages/games.css';
 
 const Games = () => {
   const [currentFilter, setCurrentFilter] = useState('Status do Jogo');
