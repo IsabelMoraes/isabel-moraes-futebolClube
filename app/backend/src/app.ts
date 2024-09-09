@@ -3,6 +3,7 @@ import 'express-async-errors';
 
 import errorMiddleware from './middlewares/errorMiddleware';
 import teamController from './controllers/teamController';
+import authRouter from './controllers/authController';
 
 class App {
   public app: express.Express;
@@ -16,6 +17,8 @@ class App {
     this.app.get('/', (req: unknown, res: { json: (arg0: { ok: boolean; }) =>
     unknown; }) => res.json({ ok: true }));
     this.app.use('/teams', teamController);
+    // Usando o roteador de autenticação
+    this.app.post('/login', authRouter);
 
     // Não remova esse middleware de erro, mas fique a vontade para customizá-lo
     // Mantenha ele sempre como o último middleware a ser chamado
