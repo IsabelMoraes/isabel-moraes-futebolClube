@@ -2,7 +2,7 @@ import * as express from 'express';
 import 'express-async-errors';
 
 import errorMiddleware from './middlewares/errorMiddleware';
-import teamController from './database/controllers/teamController';
+import teamController from './controllers/teamController';
 
 class App {
   public app: express.Express;

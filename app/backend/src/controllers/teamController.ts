@@ -1,5 +1,5 @@
 import { Request, Response, Router } from 'express';
-import Team from '../models/TeamModel';
+import Team from '../database/models/TeamModel';
 
 const teamController = Router();
 // Função para obter todos os times

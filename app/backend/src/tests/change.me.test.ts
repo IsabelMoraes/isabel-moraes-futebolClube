@@ -6,7 +6,7 @@ import { Request, Response, NextFunction } from 'express';
 const { expect } = chai;
 
 import team from '../database/models/TeamModel';
-import teamController from '../database/controllers/teamController';
+import teamController from '../controllers/teamController';
 import { app } from '../app';
 
 chai.use(chaiHttp);
