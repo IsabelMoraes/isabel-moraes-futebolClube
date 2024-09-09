@@ -6,6 +6,7 @@ function errorMiddleware(error: ICustomError, _req: Request, res: Response, _nex
   const message = error.message || 'Something went wrong';
 
   console.log(error);
+  // hadolint add
   return res.status(status).json({ message });
 }
 
