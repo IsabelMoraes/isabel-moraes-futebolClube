@@ -5,6 +5,7 @@ import 'express-async-errors';
 import errorMiddleware from './middlewares/errorMiddleware';
 import authRouter from './routes/authRoutes';
 import teamRouter from './routes/teamRoutes';
+import matchRouter from './routes/matchRoutes';
 
 class App {
   public app: express.Express;
@@ -18,6 +19,7 @@ class App {
 
     this.app.use(authRouter);
     this.app.use('/teams', teamRouter);
+    this.app.use('/matches', matchRouter);
 
     // Não remova esse middleware de erro
     this.app.use(errorMiddleware);
