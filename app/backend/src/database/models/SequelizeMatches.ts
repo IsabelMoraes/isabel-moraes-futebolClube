@@ -6,49 +6,50 @@ import {
   CreationOptional,
 } from 'sequelize';
 import db from '.';
-import Team from './TeamModel';
+import SequelizeTeam from './SequelizeTeams';
 
-class MatchModel extends Model<InferAttributes<MatchModel>, InferCreationAttributes<MatchModel>> {
+class SequelizeMatches extends Model<
+InferAttributes<SequelizeMatches>,
+InferCreationAttributes<SequelizeMatches>> {
   declare id: CreationOptional<number>;
   declare homeTeamId: number;
   declare homeTeamGoals: number;
   declare awayTeamId: number;
   declare awayTeamGoals: number;
   declare inProgress: boolean;
+  declare homeTeam?: {
+    teamName: string,
+  };
+
+  declare awayTeam?: {
+    teamName: string,
+  };
 }
 
-MatchModel.init({
+SequelizeMatches.init({
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
-    autoIncrement: true,
     primaryKey: true,
+    autoIncrement: true,
   },
   homeTeamId: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
     field: 'home_team_id',
-    references: {
-      model: 'teams',
-      key: 'id',
-    },
   },
   homeTeamGoals: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
     field: 'home_team_goals',
   },
   awayTeamId: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
     field: 'away_team_id',
-    references: {
-      model: 'teams',
-      key: 'id',
-    },
   },
   awayTeamGoals: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.STRING,
     allowNull: false,
     field: 'away_team_goals',
   },
@@ -59,12 +60,19 @@ MatchModel.init({
   },
 }, {
   sequelize: db,
-  modelName: 'Match',
+  modelName: 'Matches',
   tableName: 'matches',
   timestamps: false,
 });
 
-MatchModel.belongsTo(Team, { as: 'homeTeam', foreignKey: 'homeTeamId' });
-MatchModel.belongsTo(Team, { as: 'awayTeam', foreignKey: 'awayTeamId' });
+SequelizeMatches.belongsTo(SequelizeTeam, {
+  foreignKey: 'homeTeamId',
+  as: 'homeTeam',
+});
 
-export default MatchModel;
+SequelizeMatches.belongsTo(SequelizeTeam, {
+  foreignKey: 'awayTeamId',
+  as: 'awayTeam',
+});
+
+export default SequelizeMatches;
