@@ -16,8 +16,9 @@
     "web-vitals": "1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite --open",
+    "lint": "eslint ./src",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
