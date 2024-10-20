@@ -10,7 +10,6 @@ const GamerFilter = ({ currentFilter, setCurrentFilter }) => {
   return (
     <form>
       <label htmlFor="game-filter">
-        Partidas:
         <select
           id="game-filter"
           defaultValue={ currentFilter }

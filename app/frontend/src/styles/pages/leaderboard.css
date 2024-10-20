@@ -5,9 +5,8 @@
 .classification-handlers form label p {
   padding-bottom: 7px;
   font-size: 18px;
-  color: #1e242e;
 }
-
+ 
 .classification-handlers form label {
   color: #3d495c;
   display: flex;
