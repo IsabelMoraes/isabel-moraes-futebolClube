@@ -1,8 +1,9 @@
 .games-handlers {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  min-width: 1100px;
+  background-color: #eceef0;
+  justify-content: center;
+  min-width: max-content;
   padding: 20px 50px;
 }
 
@@ -19,6 +20,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+.games-handlers form label p{
+  padding-bottom: 7px;
+  font-size: 18px;
 }
 
 .games-handlers form label select {
