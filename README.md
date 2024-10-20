@@ -29,10 +29,12 @@ O back-end implementa regras de negócio para popular adequadamente a tabela dis
 
 ![Admin Login](./app/frontend/src/images/admin_login.gif)
 
+
 ## E atenção: apenas com a senha certa consegues acessar a edição
 Abra o Readme para encontrar!
 
-! [Pass Errada](./app/frontend/src/images/pass.gif)
+![pass Login](./app/frontend/src/images/pass.gif)
+
 
 ## Install
 
