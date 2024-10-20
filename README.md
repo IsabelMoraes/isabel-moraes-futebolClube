@@ -17,6 +17,15 @@ Nesse projeto, foi construido um back-end dockerizado utilizando modelagem de da
 
 O back-end implementa regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.
 
+
+## E como ficará na sua tela?
+
+## Se fores um user  ->
+
+![User Login](./app/frontend/src/images/user_login.gif)
+
+
+
 ## Install
 
 ```sh
