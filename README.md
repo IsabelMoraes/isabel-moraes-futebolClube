@@ -20,12 +20,12 @@ O back-end implementa regras de negócio para popular adequadamente a tabela dis
 ## E como ficará na sua tela?
 
 ## Se fores um user
-<--  email: 'user@user.com'    senha: secret_user -->
+<!--  email: 'user@user.com'    senha: secret_user -->
 
 ![User Login](./app/frontend/src/images/user_login.gif)
 
 ## Se fores um admin
-<--  email: 'admin@admin.com'   senha: secret_admin -->
+<!--  email: 'admin@admin.com'   senha: secret_admin -->
 
 ![Admin Login](./app/frontend/src/images/admin_login.gif)
 
