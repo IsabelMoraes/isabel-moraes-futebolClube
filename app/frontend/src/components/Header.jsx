@@ -17,7 +17,7 @@ const Header = ({
     localStorage.removeItem('token');
     localStorage.removeItem('role');
     setLogin(false);
-    navigate('/leaderboard');
+    navigate('/login');
   };
 
   return (

@@ -11,11 +11,11 @@ import './styles/app.css';
 function App() {
   return (
     <Routes>
+      <Route path="/login" element={ <Login /> } />
       <Route path="matches/settings" element={ <MatchSettings /> } />
       <Route path="/leaderboard" element={ <Leaderboard /> } />
       <Route path="/matches" element={ <Games /> } />
-      <Route path="/login" element={ <Login /> } />
-      <Route exact path="/" element={ <Navigate to="/leaderboard" /> } />
+      <Route exact path="/" element={ <Navigate to="/login" /> } />
     </Routes>
   );
 }
