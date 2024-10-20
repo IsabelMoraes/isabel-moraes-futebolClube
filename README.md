@@ -2,7 +2,6 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
 
-  <img alt="layout" src="https://raw.githubusercontent.com/tryber/sd-039-trybe-futebol-clube/main/assets/front-example.png?token=GHSAT0AAAAAACYNMNXVR5V7LNF5636YNYS2ZYVFTFA" />
 </p>
 
 > O TFC é um site informativo sobre partidas e classificações de futebol! ⚽️
@@ -20,11 +19,20 @@ O back-end implementa regras de negócio para popular adequadamente a tabela dis
 
 ## E como ficará na sua tela?
 
-## Se fores um user  ->
+## Se fores um user
+<--  email: 'user@user.com'    senha: secret_user -->
 
 ![User Login](./app/frontend/src/images/user_login.gif)
 
+## Se fores um admin
+<--  email: 'admin@admin.com'   senha: secret_admin -->
 
+![Admin Login](./app/frontend/src/images/admin_login.gif)
+
+## E atenção: apenas com a senha certa consegues acessar a edição
+Abra o Readme para encontrar!
+
+! [Pass Errada](./app/frontend/src/images/pass.gif)
 
 ## Install
 
