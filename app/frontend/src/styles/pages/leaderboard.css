@@ -2,10 +2,17 @@
   display: flex;
 }
 
+.classification-handlers form label p {
+  padding-bottom: 7px;
+  font-size: 18px;
+  color: #1e242e;
+}
+
 .classification-handlers form label {
   color: #3d495c;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: Verdana , Tahoma , sans-serif;
   font-size: 16px;
   font-style: normal;
